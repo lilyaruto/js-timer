@@ -29,6 +29,7 @@ class Timer {
             this.pause();
         } else {
             this.timeRemaining  = this.timeRemaining - 1;
+            this.onTick();
         }
     }
 
