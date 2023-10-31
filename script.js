@@ -19,7 +19,16 @@ class Timer {
     }
 
     tick = () => {
-        console.log("tick");
+        this.timeRemaining  = this.timeRemaining - 1;
+        console.log(this.timeRemaining);
+    }
+
+    get timeRemaining() {
+        return parseInt(this.duration.value);
+    }
+
+    set timeRemaining(time) {
+        this.duration.value = time;
     }
 }
 
